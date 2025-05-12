@@ -52,7 +52,6 @@ A Flask-based API that analyzes a dish name, extracts its ingredients, maps them
   - The main entry point of the application, this file runs the Flask server and exposes the APIs (/analyze_dish and /analyze_multiple_dishes). It ties together the core pipeline for processing dish names and returning nutrition analysis.
 It initializes the Flask app and sets up routes for the API endpoints. The file integrates the core pipeline functions from `utils/pipeline.py`, `utils/nutrition.py`, and `utils/dish_mapping.py`, managing the logic for receiving dish names, processing them through the pipeline, and returning the results in a JSON format. This serves as the main server process for both single dish and multiple dish nutrition analysis.
 
-- 
 - `utils/pipeline.py`:
   - The heart of the pipeline, this file orchestrates the entire analysis for a single dish. It uses the `fetch_ingredients()` function to query the Gemini LLM and obtain ingredients and their quantities for the given dish name. The file includes unit conversion logic for ingredients, utilizing the `measurement_ref.json` file, and maps ingredients to the nutrition database in `nutrition.csv`. It calculates the total nutrition for all ingredients and identifies the dish type and weight using `food_categories.csv`. Finally, it scales the nutrition values based on the dish's yield and weight category.
 

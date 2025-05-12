@@ -1,2 +1,6 @@
 Flask
 pandas
+google-generativeai
+python-dotenv
+fuzzywuzzy
+logging

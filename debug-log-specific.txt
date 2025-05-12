@@ -1,0 +1,116 @@
+(venv) D:\Smart Nutrition Estimator\utils>python pipeline.py
+Yield Information: 800 grams
+Converted Ingredient List:
+
+Ingredient                Original Quantity    Household Unit
+All-Purpose Flour         2 cups               2 Cups
+Carom Seeds               1 teaspoon           1 Teaspoon
+Salt                      1 teaspoon           1 Teaspoon
+Oil                       3 tablespoons        3 Tablespoons
+Potatoes                  2 large              2 Pieces
+Peas                      1 cup                1 Cup
+Green Chilies             2                    2 Pieces
+Ginger                    1 inch
+Cumin Seeds               1 teaspoon           1 Teaspoon
+Coriander Powder          1 teaspoon           1 Teaspoon
+Garam Masala              1/2 teaspoon         1/2 Teaspoon
+Amchoor (Dry Mango Powder) 1/2 teaspoon         1/2 Teaspoon
+Oil                       for frying
+
+Samosa: 800 grams
+
+Mapped Nutrition for Each Ingredient:
+
+All-Purpose Flour → Cowage seed flour
+  Energy: 1194.0 kcal
+  Carbs: 166.8 g
+  Protein: 84.6 g
+  Fat: 21.0 g
+
+Carom Seeds → Bamboo seeds
+  Energy: 18.35 kcal
+  Carbs: 3.8 g
+  Protein: 0.66 g
+  Fat: 0.06 g
+
+Salt → Salt
+  Energy: 0.0 kcal
+  Carbs: 0.0 g
+  Protein: 0.0 g
+  Fat: 0.0 g
+
+Oil → Oil sardine
+  Energy: 43.65 kcal
+  Carbs: 0.04 g
+  Protein: 8.82 g
+  Fat: 0.9 g
+
+Potatoes → Curd with potatoes (Dahi aloo)
+  Energy: 119.8 kcal
+  Carbs: 14.3 g
+  Protein: 3.12 g
+  Fat: 5.44 g
+
+Peas → Peas roasted
+  Energy: 510.0 kcal
+  Carbs: 88.2 g
+  Protein: 34.35 g
+  Fat: 2.1 g
+
+Green Chilies → Green gram, dal (Vigna radiata)
+  Energy: 651.52 kcal
+  Carbs: 105.18 g
+  Protein: 47.76 g
+  Fat: 2.7 g
+
+Ginger → Mango ginger (Curcuma amada)
+  Energy: 42.3 kcal
+  Carbs: 6.98 g
+  Protein: 1.45 g
+  Fat: 0.7 g
+
+Cumin Seeds → Cumin seeds (Cuminum cyminum)
+  Energy: 15.22 kcal
+  Carbs: 1.13 g
+  Protein: 0.7 g
+  Fat: 0.83 g
+
+Coriander Powder → Coriander leaves (Coriandrum sativum)
+  Energy: 1.55 kcal
+  Carbs: 0.1 g
+  Protein: 0.18 g
+  Fat: 0.03 g
+
+Garam Masala → Garam masala
+  Energy: 18.95 kcal
+  Carbs: 2.26 g
+  Protein: 0.78 g
+  Fat: 0.76 g
+
+Amchoor (Dry Mango Powder) → SIVA'S, AMHUR POWDER (DRY MANGO POWDER)
+  Energy: 18.0 kcal
+  Carbs: 4.5 g
+  Protein: 0.0 g
+  Fat: 0.0 g
+
+Oil → Oil sardine
+  Energy: 97.0 kcal
+  Carbs: 0.1 g
+  Protein: 19.6 g
+  Fat: 2.0 g
+
+
+Total Nutrition Estimate for 800 grams:
+
+Energy: 2730.3399999999997 kcal
+Carbohydrates: 393.3900000000001 g
+Protein: 202.01999999999995 g
+Fat: 36.52 g
+
+Dish Type: ('Snacks', '100g')
+
+Nutrition for 100g of the Samosa:
+Energy: 341.29249999999996 kcal
+Carbohydrates: 49.17375000000001 g
+Protein: 25.252499999999994 g
+Fat: 4.565 

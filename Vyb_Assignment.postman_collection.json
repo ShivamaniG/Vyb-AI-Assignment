@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "66732807-8f1f-4c0b-b800-af6cb74c3de2",
+		"name": "Vyb_Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36001215"
+	},
+	"item": [
+		{
+			"name": "Analyse Dish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dish_name\": \"Samosas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/analyze_dish",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"analyze_dish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Analyze Multiple Dishes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

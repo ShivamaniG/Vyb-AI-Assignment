@@ -1,0 +1,235 @@
+2025-05-13 02:46:03,105 - INFO - Loading category weights from D:\Smart Nutrition Estimator\utils\..\data\food_categories.csv
+2025-05-13 02:46:03,108 - INFO - Category weights loaded successfully.
+2025-05-13 02:46:03,136 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-13 02:46:03,136 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-13 02:46:03,139 - INFO -  * Restarting with stat
+2025-05-13 02:46:04,759 - INFO - Loading category weights from D:\Smart Nutrition Estimator\utils\..\data\food_categories.csv
+2025-05-13 02:46:04,761 - INFO - Category weights loaded successfully.
+2025-05-13 02:46:04,780 - WARNING -  * Debugger is active!
+2025-05-13 02:46:04,782 - INFO -  * Debugger PIN: 469-545-590
+2025-05-13 02:46:27,093 - INFO - Finding dish type for: Biryani
+2025-05-13 02:46:27,094 - INFO - Best match for 'Biryani' is ('Dry Rice Item', '124g') with score 100
+2025-05-13 02:46:28,513 - INFO - Finding dish type for: Chicken Fry
+2025-05-13 02:46:28,513 - INFO - Best match for 'Chicken Fry' is ('Non - Veg Fry', '100g') with score 100
+2025-05-13 02:46:31,388 - INFO - Finding dish type for: Poha
+2025-05-13 02:46:31,389 - INFO - Best match for 'Poha' is ('Wet Breakfast Item', '130g') with score 100
+2025-05-13 02:46:33,933 - INFO - Finding dish type for: Tomato Soup
+2025-05-13 02:46:33,934 - INFO - Best match for 'Tomato Soup' is ('Plain Soups', '150g') with score 100
+2025-05-13 02:46:35,603 - INFO - Finding dish type for: Gulab Jamun
+2025-05-13 02:46:35,604 - INFO - Best match for 'Gulab Jamun' is ('Sweets', '120g') with score 100
+2025-05-13 02:46:35,604 - INFO - 127.0.0.1 - - [13/May/2025 02:46:35] "POST /analyze_multiple_dishes HTTP/1.1" 200 -
+2025-05-13 02:47:03,730 - INFO - Finding dish type for: Tandoori Chicken
+2025-05-13 02:47:03,730 - INFO - Best match for 'Tandoori Chicken' is ('Non - Veg Fry', '100g') with score 78
+2025-05-13 02:47:03,731 - INFO - 127.0.0.1 - - [13/May/2025 02:47:03] "POST /analyze_dish HTTP/1.1" 200 -
+2025-05-13 02:47:18,763 - INFO - Finding dish type for: Tandoori Khebabs
+2025-05-13 02:47:18,764 - INFO - Best match for 'Tandoori Khebabs' is ('Unknown', None) with score 0
+2025-05-13 02:47:18,768 - INFO - 127.0.0.1 - - [13/May/2025 02:47:18] "[35m[1mPOST /analyze_dish HTTP/1.1[0m" 500 -
+2025-05-13 02:48:12,365 - INFO -  * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\dish_mapping.py', reloading
+2025-05-13 02:48:14,559 - INFO -  * Restarting with stat
+2025-05-13 02:48:16,417 - WARNING -  * Debugger is active!
+2025-05-13 02:48:16,419 - INFO -  * Debugger PIN: 469-545-590
+2025-05-13 02:48:18,513 - INFO -  * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\dish_mapping.py', reloading
+2025-05-13 02:48:18,759 - INFO -  * Restarting with stat
+2025-05-13 02:48:47,437 - INFO -  * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:root:Analyzing dish: Tandoori Khebabs
+DEBUG:root:Fetched ingredients: [{'ingredient': 'Chicken thighs', 'original_quantity': '500g', 'household_unit': ''}, {'ingredient': 'Ginger-garlic paste', 'original_quantity': '2 tbsp', 'household_unit': '2 Tablespoon'}, {'ingredient': 'Yogurt', 'original_quantity': '1/2 cup', 'household_unit': '1/2 Cup'}, {'ingredient': 'Lemon juice', 'original_quantity': '1 tbsp', 'household_unit': '1 Tablespoon'}, {'ingredient': 'Tandoori masala', 'original_quantity': '2 tbsp', 'household_unit': '2 Tablespoon'}, {'ingredient': 'Red chili powder', 'original_quantity': '1 tsp', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Garam masala', 'original_quantity': '1/2 tsp', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Turmeric powder', 'original_quantity': '1/4 tsp', 'household_unit': '1/4 Teaspoon'}, {'ingredient': 'Vegetable oil', 'original_quantity': '1 tbsp', 'household_unit': '1 Tablespoon'}], Yield: 500g
+WARNING:root:No category weight found for: Unknown. Using default 180g.
+DEBUG:root:Scaling factor: 0.36
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 02:50:19] "POST /analyze_dish HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\pipeline.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\efficient_mapping.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug: * Detected change in 'D:\\Smart Nutrition Estimator\\utils\\pipeline.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-545-590
+INFO:root:Analyzing dish: Samosas
+DEBUG:root:Fetched ingredients: [{'ingredient': 'All-purpose flour', 'original_quantity': '2 cups', 'household_unit': '2 Cups'}, {'ingredient': 'Carom seeds', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Salt', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Oil', 'original_quantity': '1/4 cup', 'household_unit': '1/4 Cup'}, {'ingredient': 'Potatoes', 'original_quantity': '2 large', 'household_unit': '2 Pieces'}, {'ingredient': 'Green peas', 'original_quantity': '1/2 cup', 'household_unit': '1/2 Cup'}, {'ingredient': 'Ginger', 'original_quantity': '1 tablespoon, grated', 'household_unit': '1 Tablespoon, grated'}, {'ingredient': 'Green chilies', 'original_quantity': '2, chopped', 'household_unit': ''}, {'ingredient': 'Cumin seeds', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Coriander powder', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Garam masala', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Amchoor (dry mango powder)', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Oil', 'original_quantity': 'for frying', 'household_unit': ''}], Yield: 700 grams
+DEBUG:root:Scaling factor: 0.14285714285714285
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 03:50:23] "POST /analyze_dish HTTP/1.1" 200 -
+INFO:root:Analyzing dish: Samosas
+DEBUG:root:Fetched ingredients: [{'ingredient': 'All-purpose flour', 'original_quantity': '250 grams', 'household_unit': '1.0 Glass'}, {'ingredient': 'Warm water', 'original_quantity': '125 milliliters', 'household_unit': ''}, {'ingredient': 'Carom seeds', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Salt', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Ghee', 'original_quantity': '2 tablespoons', 'household_unit': '2 Tablespoons'}, {'ingredient': 'Potatoes', 'original_quantity': '500 grams', 'household_unit': '2.0 Glass'}, {'ingredient': 'Peas', 'original_quantity': '100 grams', 'household_unit': '100 grams'}, {'ingredient': 'Ginger', 'original_quantity': '1 tablespoon', 'household_unit': '1 Tablespoon'}, {'ingredient': 'Green chilies', 'original_quantity': '2 (finely chopped)', 'household_unit': ''}, {'ingredient': 'Cumin seeds', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Coriander powder', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Garam masala', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Amchur (dry mango powder)', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Oil', 'original_quantity': 'for frying', 'household_unit': ''}], Yield: 990 grams
+DEBUG:root:Scaling factor: 0.10101010101010101
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 03:52:55] "POST /analyze_dish HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 03:53:11] "POST /analyze_multiple_dishes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 03:53:31] "POST /analyze_multiple_dishes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 03:53:59] "POST /analyze_multiple_dishes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 03:54:14] "POST /analyze_multiple_dishes HTTP/1.1" 200 -
+INFO:root:Analyzing dish: Samosas
+DEBUG:root:Fetched ingredients: [{'ingredient': 'All-purpose flour', 'original_quantity': '250 grams', 'household_unit': '1.0 Glass'}, {'ingredient': 'Carom seeds', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Salt', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Oil', 'original_quantity': '3 tablespoons', 'household_unit': '3 Tablespoons'}, {'ingredient': 'Potatoes', 'original_quantity': '500 grams', 'household_unit': '2.0 Glass'}, {'ingredient': 'Green peas', 'original_quantity': '100 grams', 'household_unit': '100 grams'}, {'ingredient': 'Ginger', 'original_quantity': '1 tablespoon, grated', 'household_unit': '1 Tablespoon, grated'}, {'ingredient': 'Green chilies', 'original_quantity': '2, finely chopped', 'household_unit': ''}, {'ingredient': 'Cumin powder', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Coriander powder', 'original_quantity': '1 teaspoon', 'household_unit': '1 Teaspoon'}, {'ingredient': 'Garam masala', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Amchur (dry mango powder)', 'original_quantity': '1/2 teaspoon', 'household_unit': '1/2 Teaspoon'}, {'ingredient': 'Oil', 'original_quantity': 'for frying', 'household_unit': ''}], Yield: 850 grams
+DEBUG:root:Scaling factor: 0.11764705882352941
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 03:54:34] "POST /analyze_dish HTTP/1.1" 200 -

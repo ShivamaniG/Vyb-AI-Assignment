@@ -1,0 +1,29 @@
+{
+    "measuring_units": [
+      {
+        "unit": "Pieces count",
+        "conversion_to_ml": null
+      },
+      {
+        "unit": "katori/Cup",
+        "conversion_to_ml": 150
+      },
+      {
+        "unit": "glass",
+        "conversion_to_ml": 250
+      },
+      {
+        "unit": "teaspoon",
+        "conversion_to_ml": 5
+      },
+      {
+        "unit": "tablespoon",
+        "conversion_to_ml": 15
+      },
+      {
+        "unit": "teacup",
+        "conversion_to_ml": 100
+      }
+    ]
+  }
+  

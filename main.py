@@ -12,10 +12,10 @@ app = Flask(__name__)
 def home():
     return "Flask is working!"
 
-import logging
-import traceback
+# import logging
+# import traceback
 
-logging.basicConfig(filename="debug-log.txt", level=logging.DEBUG)
+# logging.basicConfig(filename="debug-log.txt", level=logging.DEBUG)
 
 @app.route('/analyze_dish', methods=['POST'])
 def analyze_dish():
@@ -24,13 +24,13 @@ def analyze_dish():
         dish_name = data.get("dish_name")
 
         if not dish_name:
-            logging.error("Dish name not provided.")
+            # logging.error("Dish name not provided.")
             return jsonify({"error": "Dish name is required"}), 400
 
-        logging.info(f"Analyzing dish: {dish_name}")
+        # logging.info(f"Analyzing dish: {dish_name}")
 
         ingredients, yield_info = fetch_ingredients(dish_name)
-        logging.debug(f"Fetched ingredients: {ingredients}, Yield: {yield_info}")
+        # logging.debug(f"Fetched ingredients: {ingredients}, Yield: {yield_info}")
 
         mapped_ingredients = map_ingredients_to_nutrition(ingredients)
         total_nutrition = calculate_total_nutrition(mapped_ingredients)
@@ -38,13 +38,13 @@ def analyze_dish():
         category, weight_cat = dish_type
 
         if not weight_cat:
-            logging.warning(f"No category weight found for: {category}. Using default 180g.")
+            # logging.warning(f"No category weight found for: {category}. Using default 180g.")
             weight_cat = "180g"
 
         weight_in_grams = int(re.findall(r'\d+', yield_info)[0])
         desired_weight = int(weight_cat.replace("g", "").strip())
         scaling_factor = desired_weight / weight_in_grams
-        logging.debug(f"Scaling factor: {scaling_factor}")
+        # logging.debug(f"Scaling factor: {scaling_factor}")
 
         scaled_nutrition = {
             "energy_kcal": total_nutrition['energy_kcal'] * scaling_factor,
@@ -66,8 +66,8 @@ def analyze_dish():
         })
 
     except Exception as e:
-        logging.error("Error analyzing dish:")
-        logging.error(traceback.format_exc())
+        # logging.error("Error analyzing dish:")
+        # logging.error(traceback.format_exc())
         return jsonify({"error": str(e)}), 500
 
 

@@ -17,7 +17,7 @@ A Flask-based API that analyzes a dish name, extracts its ingredients, maps them
 1. **Input**: Accepts the *dish name* as input.
 2. **Fetch Ingredients**: Uses **Gemini API** to extract a list of ingredients and their quantities.
 3. **Convert Ingredient Units**: Converts ingredient quantities to household units using `data/measurement_ref.json`.
-4. **Map Ingredients to Nutrition DB**: Finds the best match in `data/nutrition.csv` for each ingredient.
+4. **Map Ingredients to Nutrition DB**: Finds the best match in `data/nutrition_db.csv` for each ingredient.
 5. **Calculate Total Nutrition**: Computes total nutritional values for the full list of ingredients.
 6. **Identify Dish Type**: Uses `data/food_categories.csv` to determine dish type and assign a weight category.
 7. **Scale Nutrition per 1 Katori**: Outputs final nutrition facts based on scaled standard serving size (e.g., 180g).
@@ -29,7 +29,7 @@ A Flask-based API that analyzes a dish name, extracts its ingredients, maps them
 
 - ✅ Uses **FuzzyWuzzy** & **Levenshtein distance** for handling fuzzy ingredient matching.
 - ✅ If ingredient is not found in the nutrition DB, a "Not Found" message is returned.
-- ✅ If dish type is not certain, it is categorized as `"Unknown"` with default weight set to **180g**.
+- ✅ If dish type is not certain, it is categorized as `"Unknown"` with default weight category set to **180g**.
 
 ---
 
@@ -48,8 +48,14 @@ A Flask-based API that analyzes a dish name, extracts its ingredients, maps them
 
 ## 📌 Files and Their Roles
 
-- `utils/pipeline.py`:  
-  Main pipeline – uses `fetch_ingredients()` to query Gemini, converts units, maps to nutrition DB, calculates nutrition, identifies dish type and category, and scales nutrition to 1 katori (based on yield and category weight).
+- `main.py`:
+  - The main entry point of the application, this file runs the Flask server and exposes the APIs (/analyze_dish and /analyze_multiple_dishes). It ties together the core pipeline for processing dish names and returning nutrition analysis.
+It initializes the Flask app and sets up routes for the API endpoints. The file integrates the core pipeline functions from `utils/pipeline.py`, `utils/nutrition.py`, and `utils/dish_mapping.py`, managing the logic for receiving dish names, processing them through the pipeline, and returning the results in a JSON format. This serves as the main server process for both single dish and multiple dish nutrition analysis.
+
+- 
+- `utils/pipeline.py`:
+  - The heart of the pipeline, this file orchestrates the entire analysis for a single dish. It uses the `fetch_ingredients()` function to query the Gemini LLM and obtain ingredients and their quantities for the given dish name. The file includes unit conversion logic for ingredients, utilizing the `measurement_ref.json` file, and maps ingredients to the nutrition database in `nutrition.csv`. It calculates the total nutrition for all ingredients and identifies the dish type and weight using `food_categories.csv`. Finally, it scales the nutrition values based on the dish's yield and weight category.
+
 
 - `utils/nutrition.py`:  
   - `map_ingredients_to_nutrition()`: Uses fuzzy logic to match ingredients to entries in `nutrition.csv`.  
@@ -61,7 +67,8 @@ A Flask-based API that analyzes a dish name, extracts its ingredients, maps them
   - If dish is unknown, sets weight to 180g and category to "Unknown".
 
 - `efficient_mapping.py`:  
-  - Advanced LLM + fuzzy logic for resolving synonyms and ambiguous names.
+  - The role of this file is to resolve ingredient synonyms and ambiguous ingredient names using advanced fuzzy matching and LLM integration. In **Approach 1**, instead of relying on just the first match from fuzzy matching, it fetches a list of similar ingredients and selects the best match. In **Approach 2**, after identifying similar matches, LLM (Gemini) is used to refine and enhance the best match.
+
 
 ---
 
